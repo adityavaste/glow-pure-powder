@@ -38,7 +38,7 @@ function Hero() {
             <em className="text-primary not-italic">Wake up</em> your glow.
           </h1>
           <p className="text-lg text-muted-foreground max-w-md leading-relaxed">
-            Sahaja is a hand-blended botanical <strong className="text-foreground font-medium">ubtan powder</strong> — not a soap, not a cream. Just sun-dried herbs, roots, and flowers that gently lift tan and reveal soft, luminous skin.
+            Tulasi is a hand-blended botanical <strong className="text-foreground font-medium">ubtan powder</strong> — not a soap, not a cream. Just sun-dried herbs, roots, and flowers that gently lift tan and reveal soft, luminous skin.
           </p>
           <div className="flex flex-wrap items-center gap-4">
             <a href="#order" className="inline-flex items-center rounded-full bg-primary text-primary-foreground px-7 py-3.5 font-medium hover:opacity-90 transition shadow-soft">
@@ -112,7 +112,7 @@ function Benefits() {
   return (
     <section className="mx-auto max-w-7xl px-6 py-24">
       <div className="max-w-2xl mb-16">
-        <span className="text-xs uppercase tracking-[0.2em] text-clay">Why Sahaja</span>
+        <span className="text-xs uppercase tracking-[0.2em] text-clay">Why Tulasi</span>
         <h2 className="font-display text-4xl md:text-5xl mt-3">Skincare your great-grandmother would recognise.</h2>
       </div>
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -133,7 +133,7 @@ function ProductSection() {
     <section className="bg-warm py-24">
       <div className="mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-16 items-center">
         <div className="relative order-2 lg:order-1">
-          <img src={jarImg} alt="Sahaja ubtan powder in glass jar" loading="lazy" width={1024} height={1280} className="rounded-3xl shadow-soft w-full" />
+          <img src={jarImg} alt="Tulasi ubtan powder in glass jar" loading="lazy" width={1024} height={1280} className="rounded-3xl shadow-soft w-full" />
         </div>
         <div className="order-1 lg:order-2 space-y-6">
           <span className="text-xs uppercase tracking-[0.2em] text-clay">The Product</span>
@@ -160,7 +160,7 @@ function ProductSection() {
 
 function Ritual() {
   const steps = [
-    { n: "01", t: "Scoop", d: "Take a teaspoon of Sahaja powder into your palm." },
+    { n: "01", t: "Scoop", d: "Take a teaspoon of Tulasi powder into your palm." },
     { n: "02", t: "Mix", d: "Add rosewater, raw milk, or yogurt to form a smooth paste." },
     { n: "03", t: "Massage", d: "Gently apply to face and neck. Let it rest for 10 minutes." },
     { n: "04", t: "Reveal", d: "Wash off with cool water in soft circular motions. Glow." },
@@ -224,11 +224,11 @@ function Order() {
       </p>
       <div className="inline-flex flex-col sm:flex-row items-center gap-4 bg-card border border-border rounded-2xl p-6 shadow-card">
         <div className="text-left">
-          <div className="font-display text-2xl">Sahaja Ubtan · 100g</div>
+          <div className="font-display text-2xl">Tulasi Ubtan · 100g</div>
           <div className="text-sm text-muted-foreground">Hand-blended · Glass jar</div>
         </div>
         <div className="font-display text-3xl text-clay">₹499</div>
-        <a href="mailto:hello@sahaja.co?subject=Order%20Sahaja%20Ubtan" className="rounded-full bg-primary text-primary-foreground px-8 py-3.5 font-medium hover:opacity-90 transition">
+        <a href="mailto:hello@tulasi.co?subject=Order%20Tulasi%20Ubtan" className="rounded-full bg-primary text-primary-foreground px-8 py-3.5 font-medium hover:opacity-90 transition">
           Order now
         </a>
       </div>
