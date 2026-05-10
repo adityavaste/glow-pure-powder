@@ -39,8 +39,10 @@ export function SiteFooter() {
         <div className="space-y-2">
           <div className="font-medium mb-2">Explore</div>
           <Link to="/about" className="block text-muted-foreground hover:text-foreground">About Us</Link>
+          <Link to="/benefits" className="block text-muted-foreground hover:text-foreground">Benefits</Link>
           <Link to="/ingredients" className="block text-muted-foreground hover:text-foreground">Ingredients</Link>
           <Link to="/ritual" className="block text-muted-foreground hover:text-foreground">The Ritual</Link>
+          <Link to="/testimonials" className="block text-muted-foreground hover:text-foreground">Reviews</Link>
           <Link to="/order" className="block text-muted-foreground hover:text-foreground">Order</Link>
           <Link to="/contact" className="block text-muted-foreground hover:text-foreground">Contact</Link>
         </div>
