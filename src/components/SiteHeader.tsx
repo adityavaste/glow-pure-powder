@@ -5,7 +5,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 backdrop-blur-md bg-background/70 border-b border-border/60">
       <div className="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
-          <span className="h-8 w-8 rounded-full bg-clay grid place-items-center text-primary-foreground font-display text-lg">S</span>
+          <span className="h-8 w-8 rounded-full bg-clay grid place-items-center text-primary-foreground font-display text-lg">T</span>
           <span className="font-display text-xl tracking-tight">Tulasi</span>
         </Link>
         <nav className="hidden md:flex items-center gap-7 text-sm">

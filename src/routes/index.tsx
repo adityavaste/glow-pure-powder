@@ -13,7 +13,6 @@ function Index() {
     <div className="min-h-screen bg-background">
       <SiteHeader />
       <Hero />
-      <Marquee />
       <Benefits />
       <ProductSection />
       <Ritual />
