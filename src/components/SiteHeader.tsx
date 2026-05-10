@@ -4,9 +4,12 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 backdrop-blur-md bg-background/70 border-b border-border/60">
       <div className="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2">
+        <Link to="/" className="flex items-center gap-3">
           <span className="h-8 w-8 rounded-full bg-clay grid place-items-center text-primary-foreground font-display text-lg">T</span>
-          <span className="font-display text-xl tracking-tight">Tulasi</span>
+          <span className="leading-tight">
+            <span className="block font-display text-xl tracking-tight">Tulasi</span>
+            <span className="hidden sm:block text-[10px] uppercase tracking-[0.2em] text-muted-foreground -mt-0.5">Glow, the slow way</span>
+          </span>
         </Link>
         <nav className="hidden md:flex items-center gap-7 text-sm">
           <Link to="/" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition">Home</Link>
@@ -15,9 +18,9 @@ export function SiteHeader() {
           <Link to="/ritual" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition">Ritual</Link>
           <Link to="/contact" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition">Contact</Link>
         </nav>
-        <a href="#order" className="inline-flex items-center rounded-full bg-primary text-primary-foreground px-5 py-2 text-sm font-medium hover:opacity-90 transition">
+        <Link to="/order" className="inline-flex items-center rounded-full bg-primary text-primary-foreground px-5 py-2 text-sm font-medium hover:opacity-90 transition">
           Order ₹499
-        </a>
+        </Link>
       </div>
     </header>
   );
@@ -28,7 +31,8 @@ export function SiteFooter() {
     <footer className="border-t border-border/60 mt-24">
       <div className="mx-auto max-w-7xl px-6 py-12 grid md:grid-cols-3 gap-8 text-sm">
         <div>
-          <div className="font-display text-2xl mb-2">Tulasi</div>
+          <div className="font-display text-2xl">Tulasi</div>
+          <div className="text-xs uppercase tracking-[0.2em] text-clay mb-3">Glow, the slow way</div>
           <p className="text-muted-foreground max-w-xs">Hand-blended ubtan powder. Rooted in tradition, made for modern skin.</p>
         </div>
         <div className="space-y-2">
@@ -36,6 +40,7 @@ export function SiteFooter() {
           <Link to="/about" className="block text-muted-foreground hover:text-foreground">About Us</Link>
           <Link to="/ingredients" className="block text-muted-foreground hover:text-foreground">Ingredients</Link>
           <Link to="/ritual" className="block text-muted-foreground hover:text-foreground">The Ritual</Link>
+          <Link to="/order" className="block text-muted-foreground hover:text-foreground">Order</Link>
           <Link to="/contact" className="block text-muted-foreground hover:text-foreground">Contact</Link>
         </div>
         <div className="space-y-2">

@@ -40,7 +40,7 @@ function Hero() {
             Tulasi is a hand-blended botanical <strong className="text-foreground font-medium">ubtan powder</strong> — not a soap, not a cream. Just sun-dried herbs, roots, and flowers that gently lift tan and reveal soft, luminous skin.
           </p>
           <div className="flex flex-wrap items-center gap-4">
-            <a href="#order" className="inline-flex items-center rounded-full bg-primary text-primary-foreground px-7 py-3.5 font-medium hover:opacity-90 transition shadow-soft">
+            <a href="/order" className="inline-flex items-center rounded-full bg-primary text-primary-foreground px-7 py-3.5 font-medium hover:opacity-90 transition shadow-soft">
               Get yours — ₹499
             </a>
             <Link to="/ingredients" className="inline-flex items-center rounded-full border border-border px-7 py-3.5 font-medium hover:bg-card transition">
@@ -148,7 +148,7 @@ function ProductSection() {
               </li>
             ))}
           </ul>
-          <a href="#order" className="inline-flex items-center rounded-full bg-primary text-primary-foreground px-7 py-3.5 font-medium hover:opacity-90 transition">
+          <a href="/order" className="inline-flex items-center rounded-full bg-primary text-primary-foreground px-7 py-3.5 font-medium hover:opacity-90 transition">
             Add to cart — ₹499
           </a>
         </div>
@@ -227,7 +227,7 @@ function Order() {
           <div className="text-sm text-muted-foreground">Hand-blended · Glass jar</div>
         </div>
         <div className="font-display text-3xl text-clay">₹499</div>
-        <a href="mailto:hello@tulasi.co?subject=Order%20Tulasi%20Ubtan" className="rounded-full bg-primary text-primary-foreground px-8 py-3.5 font-medium hover:opacity-90 transition">
+        <a href="/order" className="rounded-full bg-primary text-primary-foreground px-8 py-3.5 font-medium hover:opacity-90 transition">
           Order now
         </a>
       </div>
