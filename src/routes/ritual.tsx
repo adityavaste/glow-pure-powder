@@ -5,9 +5,9 @@ import heroImg from "@/assets/hero-powder.jpg";
 export const Route = createFileRoute("/ritual")({
   head: () => ({
     meta: [
-      { title: "How to Use — The Ubtan Ritual | Sahaja" },
-      { name: "description", content: "A simple four-step guide to using Sahaja ubtan powder. Mix, massage, rest, reveal — for soft, glowing, de-tanned skin." },
-      { property: "og:title", content: "The Sahaja Ritual" },
+      { title: "How to Use — The Ubtan Ritual | Tulasi" },
+      { name: "description", content: "A simple four-step guide to using Tulasi ubtan powder. Mix, massage, rest, reveal — for soft, glowing, de-tanned skin." },
+      { property: "og:title", content: "The Tulasi Ritual" },
       { property: "og:description", content: "Four quiet minutes. Every morning." },
     ],
   }),

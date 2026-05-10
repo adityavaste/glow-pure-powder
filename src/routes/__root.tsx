@@ -72,10 +72,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Sahaja — Natural Ubtan Powder for Glowing, De-Tanned Skin" },
+      { title: "Tulasi — Natural Ubtan Powder for Glowing, De-Tanned Skin" },
       { name: "description", content: "100% natural, chemical-free skincare powder. Removes tan, brightens skin, and restores a healthy glow. No soap. No side effects." },
-      { name: "author", content: "Sahaja Botanicals" },
-      { property: "og:title", content: "Sahaja — Natural Ubtan Powder" },
+      { name: "author", content: "Tulasi Botanicals" },
+      { property: "og:title", content: "Tulasi — Natural Ubtan Powder" },
       { property: "og:description", content: "Hand-blended botanical powder. Removes tan and reveals glowing skin — 100% natural, chemical-free." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },

@@ -5,9 +5,9 @@ import modelImg from "@/assets/glow-model.jpg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Us — Sahaja Botanicals" },
-      { name: "description", content: "Sahaja is a small, women-led botanical skincare studio crafting hand-blended ubtan powder from organic herbs sourced across India." },
-      { property: "og:title", content: "About — Sahaja" },
+      { title: "About Us — Tulasi Botanicals" },
+      { name: "description", content: "Tulasi is a small, women-led botanical skincare studio crafting hand-blended ubtan powder from organic herbs sourced across India." },
+      { property: "og:title", content: "About — Tulasi" },
       { property: "og:description", content: "A small, women-led botanical studio." },
     ],
   }),
@@ -33,12 +33,12 @@ function Page() {
             Skincare made the <em className="text-primary not-italic">slow</em> way.
           </h1>
           <p className="mt-6 text-lg text-muted-foreground max-w-md leading-relaxed">
-            Sahaja is a four-woman studio in Bengaluru, blending ubtan from a recipe that's older than any of us. We don't do launches, trends, or seasonal collections. We make one thing — and we make it well.
+            Tulasi is a four-woman studio in Bengaluru, blending ubtan from a recipe that's older than any of us. We don't do launches, trends, or seasonal collections. We make one thing — and we make it well.
           </p>
         </div>
         <img
           src={modelImg}
-          alt="Sahaja founder"
+          alt="Tulasi founder"
           loading="lazy"
           width={1024}
           height={1280}

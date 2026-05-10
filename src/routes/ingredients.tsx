@@ -4,9 +4,9 @@ import { SiteHeader, SiteFooter } from "@/components/SiteHeader";
 export const Route = createFileRoute("/ingredients")({
   head: () => ({
     meta: [
-      { title: "Ingredients — Sahaja Natural Ubtan Powder" },
-      { name: "description", content: "Eleven sun-dried botanicals in every jar of Sahaja. Turmeric, sandalwood, neem, rose, saffron and more — sourced from organic farms in South India." },
-      { property: "og:title", content: "Ingredients — Sahaja" },
+      { title: "Ingredients — Tulasi Natural Ubtan Powder" },
+      { name: "description", content: "Eleven sun-dried botanicals in every jar of Tulasi. Turmeric, sandalwood, neem, rose, saffron and more — sourced from organic farms in South India." },
+      { property: "og:title", content: "Ingredients — Tulasi" },
       { property: "og:description", content: "Eleven sun-dried botanicals. Nothing else." },
     ],
   }),

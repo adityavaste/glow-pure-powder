@@ -5,9 +5,9 @@ import { SiteHeader, SiteFooter } from "@/components/SiteHeader";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Sahaja Botanicals" },
-      { name: "description", content: "Get in touch with Sahaja. Questions about ingredients, orders, or your skin — we read and reply to every message." },
-      { property: "og:title", content: "Contact — Sahaja" },
+      { title: "Contact — Tulasi Botanicals" },
+      { name: "description", content: "Get in touch with Tulasi. Questions about ingredients, orders, or your skin — we read and reply to every message." },
+      { property: "og:title", content: "Contact — Tulasi" },
       { property: "og:description", content: "We read and reply to every message." },
     ],
   }),
@@ -33,7 +33,7 @@ function Page() {
 
           <div className="mt-12 space-y-6">
             <Item label="Email">
-              <a href="mailto:hello@sahaja.co" className="hover:text-primary transition">hello@sahaja.co</a>
+              <a href="mailto:hello@tulasi.co" className="hover:text-primary transition">hello@tulasi.co</a>
             </Item>
             <Item label="WhatsApp">
               <a href="https://wa.me/919876543210" className="hover:text-primary transition">+91 98765 43210</a>
