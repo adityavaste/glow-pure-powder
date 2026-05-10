@@ -1,27 +1,92 @@
 import { Link } from "@tanstack/react-router";
+import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
+
+const navLinks = [
+  { to: "/", label: "Home" },
+  { to: "/about", label: "About" },
+  { to: "/benefits", label: "Benefits" },
+  { to: "/ingredients", label: "Ingredients" },
+  { to: "/testimonials", label: "Reviews" },
+  { to: "/contact", label: "Contact" },
+] as const;
 
 export function SiteHeader() {
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [open]);
+
   return (
     <header className="sticky top-0 z-40 backdrop-blur-md bg-background/70 border-b border-border/60">
       <div className="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-3">
+        <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
           <span className="h-8 w-8 rounded-full bg-clay grid place-items-center text-primary-foreground font-display text-lg">T</span>
           <span className="leading-tight">
             <span className="block font-display text-xl tracking-tight">Tulasi</span>
             <span className="hidden sm:block text-[10px] uppercase tracking-[0.2em] text-muted-foreground -mt-0.5">Glow, the slow way</span>
           </span>
         </Link>
+
         <nav className="hidden md:flex items-center gap-7 text-sm">
-          <Link to="/" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition">Home</Link>
-          <Link to="/about" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition">About</Link>
-          <Link to="/benefits" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition">Benefits</Link>
-          <Link to="/ingredients" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition">Ingredients</Link>
-          <Link to="/testimonials" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition">Reviews</Link>
-          <Link to="/contact" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition">Contact</Link>
+          {navLinks.map((l) => (
+            <Link key={l.to} to={l.to} activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition">{l.label}</Link>
+          ))}
         </nav>
-        <Link to="/order" className="inline-flex items-center rounded-full bg-primary text-primary-foreground px-5 py-2 text-sm font-medium hover:opacity-90 transition">
-          Order ₹499
-        </Link>
+
+        <div className="flex items-center gap-2">
+          <Link to="/order" className="hidden sm:inline-flex items-center rounded-full bg-primary text-primary-foreground px-5 py-2 text-sm font-medium hover:opacity-90 transition">
+            Order ₹499
+          </Link>
+          <button
+            type="button"
+            aria-label={open ? "Close menu" : "Open menu"}
+            aria-expanded={open}
+            onClick={() => setOpen((v) => !v)}
+            className="md:hidden inline-flex items-center justify-center h-10 w-10 rounded-full border border-border/60 text-foreground hover:bg-muted transition"
+          >
+            {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile drawer */}
+      <div
+        className={`md:hidden fixed inset-0 top-16 z-30 transition-opacity duration-200 ${open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}
+        onClick={() => setOpen(false)}
+      >
+        <div className="absolute inset-0 bg-foreground/30 backdrop-blur-sm" />
+        <div
+          className={`absolute top-0 right-0 h-[calc(100vh-4rem)] w-[82%] max-w-sm bg-background border-l border-border/60 shadow-soft transition-transform duration-300 ${open ? "translate-x-0" : "translate-x-full"}`}
+          onClick={(e) => e.stopPropagation()}
+        >
+          <nav className="flex flex-col p-6 gap-1 text-base">
+            {navLinks.map((l) => (
+              <Link
+                key={l.to}
+                to={l.to}
+                onClick={() => setOpen(false)}
+                activeProps={{ className: "bg-muted text-foreground" }}
+                className="px-4 py-3 rounded-lg text-muted-foreground hover:text-foreground hover:bg-muted transition"
+              >
+                {l.label}
+              </Link>
+            ))}
+            <Link
+              to="/order"
+              onClick={() => setOpen(false)}
+              className="mt-4 inline-flex items-center justify-center rounded-full bg-primary text-primary-foreground px-5 py-3 text-sm font-medium hover:opacity-90 transition"
+            >
+              Order ₹499
+            </Link>
+            <div className="mt-8 pt-6 border-t border-border/60 text-xs text-muted-foreground">
+              <div className="uppercase tracking-[0.2em] text-clay mb-2">Glow, the slow way</div>
+              <a href="mailto:hello@tulasi.co" className="block hover:text-foreground">hello@tulasi.co</a>
+            </div>
+          </nav>
+        </div>
       </div>
     </header>
   );
