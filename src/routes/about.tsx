@@ -26,10 +26,10 @@ function Page() {
     <div className="min-h-screen bg-background">
       <SiteHeader />
 
-      <section className="mx-auto max-w-7xl px-6 pt-16 pb-20 grid lg:grid-cols-[1.1fr_1fr] gap-12 items-center">
+      <section className="mx-auto max-w-7xl px-6 pt-10 pb-14 md:pt-16 md:pb-20 grid lg:grid-cols-[1.1fr_1fr] gap-8 md:gap-12 items-center">
         <div>
           <span className="text-xs uppercase tracking-[0.2em] text-clay">About Us</span>
-          <h1 className="font-display text-5xl md:text-7xl mt-3 leading-[0.95]">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-7xl mt-3 leading-[0.95]">
             Skincare made the <em className="text-primary not-italic">slow</em> way.
           </h1>
           <p className="mt-6 text-lg text-muted-foreground max-w-md leading-relaxed">
@@ -46,16 +46,16 @@ function Page() {
         />
       </section>
 
-      <section className="bg-warm py-20">
+      <section className="bg-warm py-14 md:py-20">
         <div className="mx-auto max-w-4xl px-6 text-center">
           <span className="text-xs uppercase tracking-[0.2em] text-clay">Our promise</span>
-          <p className="font-display text-3xl md:text-4xl mt-4 leading-tight">
+          <p className="font-display text-2xl sm:text-3xl md:text-4xl mt-4 leading-tight">
             "We will never add a chemical, a filler, or a fragrance to make this powder cheaper, brighter, or longer-lasting than what nature already made it."
           </p>
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-24">
+      <section className="mx-auto max-w-7xl px-6 py-16 md:py-24">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {values.map((v, i) => (
             <div key={i} className="bg-card border border-border/60 rounded-2xl p-7">

@@ -21,10 +21,10 @@ function Page() {
     <div className="min-h-screen bg-background">
       <SiteHeader />
 
-      <section className="mx-auto max-w-7xl px-6 pt-16 pb-20 grid lg:grid-cols-2 gap-16">
+      <section className="mx-auto max-w-7xl px-6 pt-10 pb-14 md:pt-16 md:pb-20 grid lg:grid-cols-2 gap-10 md:gap-16">
         <div>
           <span className="text-xs uppercase tracking-[0.2em] text-clay">Contact</span>
-          <h1 className="font-display text-5xl md:text-7xl mt-3 leading-[0.95]">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-7xl mt-3 leading-[0.95]">
             Say <em className="text-primary not-italic">hello.</em>
           </h1>
           <p className="mt-6 text-lg text-muted-foreground max-w-md leading-relaxed">

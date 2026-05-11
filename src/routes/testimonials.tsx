@@ -57,7 +57,7 @@ function TestimonialsPage() {
 
       <section className="mx-auto max-w-7xl px-6 pt-20 pb-12">
         <span className="text-xs uppercase tracking-[0.2em] text-clay">Real stories</span>
-        <h1 className="font-display text-5xl md:text-7xl mt-3 max-w-4xl leading-[0.95]">
+        <h1 className="font-display text-4xl sm:text-5xl md:text-7xl mt-3 max-w-4xl leading-[0.95]">
           4,200+ women. <em className="text-primary not-italic">One quiet ritual.</em>
         </h1>
         <p className="text-lg text-muted-foreground max-w-xl mt-6 leading-relaxed">
@@ -67,7 +67,7 @@ function TestimonialsPage() {
 
       <section className="mx-auto max-w-7xl px-6 pb-16">
         <div className="flex items-end justify-between mb-8">
-          <h2 className="font-display text-3xl md:text-4xl">Watch their stories</h2>
+          <h2 className="font-display text-2xl sm:text-3xl md:text-4xl">Watch their stories</h2>
           <span className="text-sm text-muted-foreground hidden md:block">Tap to play</span>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
@@ -77,12 +77,12 @@ function TestimonialsPage() {
         </div>
       </section>
 
-      <section className="bg-warm py-20">
+      <section className="bg-warm py-14 md:py-20">
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex items-end justify-between mb-10">
             <div>
               <span className="text-xs uppercase tracking-[0.2em] text-clay">In their words</span>
-              <h2 className="font-display text-3xl md:text-4xl mt-3">Comments from the jar.</h2>
+              <h2 className="font-display text-2xl sm:text-3xl md:text-4xl mt-3">Comments from the jar.</h2>
             </div>
             <div className="text-right">
               <div className="font-display text-3xl text-clay">4.9 / 5</div>
@@ -113,8 +113,8 @@ function TestimonialsPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-3xl px-6 py-24 text-center">
-        <h2 className="font-display text-4xl md:text-5xl mb-5">Write your own story.</h2>
+      <section className="mx-auto max-w-3xl px-6 py-16 md:py-24 text-center">
+        <h2 className="font-display text-3xl sm:text-4xl md:text-5xl mb-5">Write your own story.</h2>
         <p className="text-muted-foreground mb-8">One jar. Free shipping. 30-day skin promise.</p>
         <Link to="/order" className="inline-flex items-center rounded-full bg-primary text-primary-foreground px-8 py-3.5 font-medium hover:opacity-90 transition shadow-soft">
           Order Tulasi — ₹499

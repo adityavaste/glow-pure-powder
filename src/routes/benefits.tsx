@@ -31,7 +31,7 @@ function BenefitsPage() {
       <SiteHeader />
       <section className="mx-auto max-w-7xl px-6 pt-20 pb-12">
         <span className="text-xs uppercase tracking-[0.2em] text-clay">Benefits</span>
-        <h1 className="font-display text-5xl md:text-7xl mt-3 max-w-3xl leading-[0.95]">
+        <h1 className="font-display text-4xl sm:text-5xl md:text-7xl mt-3 max-w-3xl leading-[0.95]">
           What 11 plants <em className="text-primary not-italic">do</em> for your skin.
         </h1>
         <p className="text-lg text-muted-foreground max-w-xl mt-6 leading-relaxed">
@@ -50,11 +50,11 @@ function BenefitsPage() {
         ))}
       </section>
 
-      <section className="bg-warm py-20">
-        <div className="mx-auto max-w-6xl px-6 grid lg:grid-cols-[1.2fr_1fr] gap-12 items-center">
+      <section className="bg-warm py-14 md:py-20">
+        <div className="mx-auto max-w-6xl px-6 grid lg:grid-cols-[1.2fr_1fr] gap-8 md:gap-12 items-center">
           <div>
             <span className="text-xs uppercase tracking-[0.2em] text-clay">The Promise</span>
-            <h2 className="font-display text-4xl md:text-5xl mt-3 mb-6">Visible glow in 14 days.</h2>
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl mt-3 mb-6">Visible glow in 14 days.</h2>
             <ul className="space-y-3">
               {[
                 "Day 1–3 — skin feels softer, cleaner",
