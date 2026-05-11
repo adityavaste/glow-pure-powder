@@ -33,7 +33,7 @@ function Page() {
       <SiteHeader />
       <section className="mx-auto max-w-7xl px-6 pt-16 pb-12">
         <span className="text-xs uppercase tracking-[0.2em] text-clay">The Recipe</span>
-        <h1 className="font-display text-5xl md:text-7xl mt-3 max-w-3xl">Eleven plants. Nothing else.</h1>
+        <h1 className="font-display text-4xl sm:text-5xl md:text-7xl mt-3 max-w-3xl">Eleven plants. Nothing else.</h1>
         <p className="mt-6 max-w-xl text-muted-foreground text-lg">
           We name every single ingredient, and where it grew. Because skincare shouldn't need a chemistry degree to read.
         </p>

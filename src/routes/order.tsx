@@ -64,11 +64,11 @@ function OrderPage() {
       <section className="mx-auto max-w-7xl px-6 py-16">
         <div className="max-w-2xl mb-12">
           <span className="text-xs uppercase tracking-[0.2em] text-clay">Order</span>
-          <h1 className="font-display text-5xl md:text-6xl mt-3">Bring home your glow.</h1>
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl mt-3">Bring home your glow.</h1>
           <p className="text-muted-foreground mt-4">Free shipping across India · Cash on delivery available · 30-day refund promise.</p>
         </div>
 
-        <div className="grid lg:grid-cols-[1.4fr_1fr] gap-12">
+        <div className="grid lg:grid-cols-[1.4fr_1fr] gap-8 md:gap-12">
           <form onSubmit={handleSubmit} className="space-y-8 bg-card border border-border/60 rounded-3xl p-8 md:p-10 shadow-card">
             <fieldset className="space-y-5">
               <legend className="font-display text-2xl mb-4">Where should we ship it?</legend>

@@ -25,10 +25,10 @@ function Page() {
   return (
     <div className="min-h-screen bg-background">
       <SiteHeader />
-      <section className="mx-auto max-w-7xl px-6 pt-16 pb-20 grid lg:grid-cols-2 gap-12 items-center">
+      <section className="mx-auto max-w-7xl px-6 pt-10 pb-14 md:pt-16 md:pb-20 grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
         <div>
           <span className="text-xs uppercase tracking-[0.2em] text-clay">Daily Practice</span>
-          <h1 className="font-display text-5xl md:text-7xl mt-3 leading-[0.95]">A ritual older than skincare itself.</h1>
+          <h1 className="font-display text-4xl sm:text-5xl md:text-7xl mt-3 leading-[0.95]">A ritual older than skincare itself.</h1>
           <p className="mt-6 text-lg text-muted-foreground max-w-md">For 2,000 years, ubtan has been the morning ceremony of Indian women preparing for weddings, festivals, and ordinary tuesdays. Here's how.</p>
         </div>
         <img src={heroImg} alt="Natural ubtan powder ritual" loading="lazy" width={1536} height={1280} className="rounded-3xl shadow-soft w-full" />

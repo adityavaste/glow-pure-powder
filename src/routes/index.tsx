@@ -26,13 +26,13 @@ function Index() {
 function Hero() {
   return (
     <section className="relative overflow-hidden">
-      <div className="mx-auto max-w-7xl px-6 pt-16 pb-24 grid lg:grid-cols-2 gap-12 items-center">
+      <div className="mx-auto max-w-7xl px-6 pt-10 pb-16 md:pt-16 md:pb-24 grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
         <div className="space-y-8">
           <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 text-xs uppercase tracking-[0.2em] text-muted-foreground">
             <span className="h-1.5 w-1.5 rounded-full bg-clay" />
             100% Natural · Chemical Free
           </span>
-          <h1 className="font-display text-5xl md:text-7xl leading-[0.95] text-foreground">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-7xl leading-[0.95] text-foreground">
             Wash away the tan.<br />
             <em className="text-primary not-italic">Wake up</em> your glow.
           </h1>
@@ -89,9 +89,9 @@ function Marquee() {
   const items = ["Turmeric", "Sandalwood", "Neem", "Rose", "Liquorice", "Oats", "Saffron", "Chickpea", "Tulsi"];
   return (
     <div className="border-y border-border/60 bg-secondary/40 py-5 overflow-hidden">
-      <div className="flex gap-12 animate-[marquee_30s_linear_infinite] whitespace-nowrap font-display text-2xl text-muted-foreground">
+      <div className="flex gap-8 md:gap-12 animate-[marquee_30s_linear_infinite] whitespace-nowrap font-display text-2xl text-muted-foreground">
         {[...items, ...items, ...items].map((i, k) => (
-          <span key={k} className="flex items-center gap-12">
+          <span key={k} className="flex items-center gap-8 md:gap-12">
             {i} <span className="text-clay">✦</span>
           </span>
         ))}
@@ -109,10 +109,10 @@ function Benefits() {
     { t: "Not a soap", d: "Mix with water, milk, or rosewater into a paste. The way your grandmother did." },
   ];
   return (
-    <section className="mx-auto max-w-7xl px-6 py-24">
+    <section className="mx-auto max-w-7xl px-6 py-16 md:py-24">
       <div className="max-w-2xl mb-16">
         <span className="text-xs uppercase tracking-[0.2em] text-clay">Why Tulasi</span>
-        <h2 className="font-display text-4xl md:text-5xl mt-3">Skincare your great-grandmother would recognise.</h2>
+        <h2 className="font-display text-3xl sm:text-4xl md:text-5xl mt-3">Skincare your great-grandmother would recognise.</h2>
       </div>
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         {items.map((it, i) => (
@@ -129,14 +129,14 @@ function Benefits() {
 
 function ProductSection() {
   return (
-    <section className="bg-warm py-24">
-      <div className="mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-16 items-center">
+    <section className="bg-warm py-16 md:py-24">
+      <div className="mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-10 md:gap-16 items-center">
         <div className="relative order-2 lg:order-1">
           <img src={jarImg} alt="Tulasi ubtan powder in glass jar" loading="lazy" width={1024} height={1280} className="rounded-3xl shadow-soft w-full" />
         </div>
         <div className="order-1 lg:order-2 space-y-6">
           <span className="text-xs uppercase tracking-[0.2em] text-clay">The Product</span>
-          <h2 className="font-display text-4xl md:text-5xl">A 200-year-old recipe in a 100g jar.</h2>
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl">A 200-year-old recipe in a 100g jar.</h2>
           <p className="text-muted-foreground leading-relaxed">
             Each jar is hand-pounded in small batches from sun-dried roots, herbs, and flowers — sourced from organic farms across South India. Nothing is heat-processed. Nothing is synthetic. The colour, the scent, the texture — all entirely from the plants themselves.
           </p>
@@ -165,11 +165,11 @@ function Ritual() {
     { n: "04", t: "Reveal", d: "Wash off with cool water in soft circular motions. Glow." },
   ];
   return (
-    <section className="mx-auto max-w-7xl px-6 py-24">
-      <div className="grid lg:grid-cols-[1fr_1.2fr] gap-16 items-start">
+    <section className="mx-auto max-w-7xl px-6 py-16 md:py-24">
+      <div className="grid lg:grid-cols-[1fr_1.2fr] gap-10 md:gap-16 items-start">
         <div className="lg:sticky lg:top-24">
           <span className="text-xs uppercase tracking-[0.2em] text-clay">The Ritual</span>
-          <h2 className="font-display text-4xl md:text-5xl mt-3 mb-6">Four quiet minutes. Every morning.</h2>
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl mt-3 mb-6">Four quiet minutes. Every morning.</h2>
           <p className="text-muted-foreground leading-relaxed">
             Ubtan isn't a product. It's a ritual older than memory — a small, deliberate pause before the day begins.
           </p>
@@ -192,11 +192,11 @@ function Ritual() {
 
 function Testimonials() {
   return (
-    <section className="bg-card py-24">
-      <div className="mx-auto max-w-7xl px-6 grid lg:grid-cols-[1.3fr_1fr] gap-16 items-center">
+    <section className="bg-card py-16 md:py-24">
+      <div className="mx-auto max-w-7xl px-6 grid lg:grid-cols-[1.3fr_1fr] gap-10 md:gap-16 items-center">
         <div className="space-y-8">
           <span className="text-xs uppercase tracking-[0.2em] text-clay">Loved by 4,200+ women</span>
-          <blockquote className="font-display text-3xl md:text-4xl leading-tight text-foreground">
+          <blockquote className="font-display text-2xl sm:text-3xl md:text-4xl leading-tight text-foreground">
             "After two weeks my tan from a beach holiday just… faded. My skin feels softer than when I used a ₹2000 cream."
           </blockquote>
           <div className="flex items-center gap-3">
@@ -215,9 +215,9 @@ function Testimonials() {
 
 function Order() {
   return (
-    <section id="order" className="mx-auto max-w-4xl px-6 py-28 text-center">
+    <section id="order" className="mx-auto max-w-4xl px-6 py-20 md:py-28 text-center">
       <span className="text-xs uppercase tracking-[0.2em] text-clay">Begin your ritual</span>
-      <h2 className="font-display text-5xl md:text-6xl mt-3 mb-6">Glow, the slow way.</h2>
+      <h2 className="font-display text-4xl sm:text-5xl md:text-6xl mt-3 mb-6">Glow, the slow way.</h2>
       <p className="text-muted-foreground max-w-xl mx-auto mb-10">
         One jar. Free shipping. 30-day skin promise — if you don't love it, we'll refund every rupee.
       </p>
