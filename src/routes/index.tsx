@@ -215,7 +215,7 @@ function Testimonials() {
 
 function Order() {
   return (
-    <section id="order" className="mx-auto max-w-4xl px-6 py-14 md:py-20 md:py-28 text-center">
+    <section id="order" className="mx-auto max-w-4xl px-6 py-20 md:py-28 text-center">
       <span className="text-xs uppercase tracking-[0.2em] text-clay">Begin your ritual</span>
       <h2 className="font-display text-4xl sm:text-5xl md:text-6xl mt-3 mb-6">Glow, the slow way.</h2>
       <p className="text-muted-foreground max-w-xl mx-auto mb-10">
