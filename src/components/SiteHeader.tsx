@@ -21,23 +21,23 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-40 backdrop-blur-md bg-background/70 border-b border-border/60">
-      <div className="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <span className="h-8 w-8 rounded-full bg-clay grid place-items-center text-primary-foreground font-display text-lg">T</span>
-          <span className="leading-tight">
-            <span className="block font-display text-xl tracking-tight">Tulasi</span>
-            <span className="hidden sm:block text-[10px] uppercase tracking-[0.2em] text-muted-foreground -mt-0.5">Glow, the slow way</span>
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 h-16 flex items-center justify-between gap-3">
+        <Link to="/" className="flex items-center gap-2 sm:gap-3 min-w-0" onClick={() => setOpen(false)}>
+          <span className="h-8 w-8 shrink-0 rounded-full bg-clay grid place-items-center text-primary-foreground font-display text-lg">T</span>
+          <span className="leading-tight min-w-0">
+            <span className="block font-display text-lg sm:text-xl tracking-tight truncate">Tulasi</span>
+            <span className="hidden md:block text-[10px] uppercase tracking-[0.2em] text-muted-foreground -mt-0.5">Glow, the slow way</span>
           </span>
         </Link>
 
-        <nav className="hidden md:flex items-center gap-7 text-sm">
+        <nav className="hidden lg:flex items-center gap-6 xl:gap-7 text-sm">
           {navLinks.map((l) => (
-            <Link key={l.to} to={l.to} activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition">{l.label}</Link>
+            <Link key={l.to} to={l.to} activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition whitespace-nowrap">{l.label}</Link>
           ))}
         </nav>
 
-        <div className="flex items-center gap-2">
-          <Link to="/order" className="hidden sm:inline-flex items-center rounded-full bg-primary text-primary-foreground px-5 py-2 text-sm font-medium hover:opacity-90 transition">
+        <div className="flex items-center gap-2 shrink-0">
+          <Link to="/order" className="hidden sm:inline-flex items-center rounded-full bg-primary text-primary-foreground px-4 sm:px-5 py-2 text-xs sm:text-sm font-medium hover:opacity-90 transition whitespace-nowrap">
             Order ₹499
           </Link>
           <button
@@ -45,16 +45,16 @@ export function SiteHeader() {
             aria-label={open ? "Close menu" : "Open menu"}
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
-            className="md:hidden inline-flex items-center justify-center h-10 w-10 rounded-full border border-border/60 text-foreground hover:bg-muted transition"
+            className="lg:hidden inline-flex items-center justify-center h-10 w-10 rounded-full border border-border/60 text-foreground hover:bg-muted transition"
           >
             {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>
         </div>
       </div>
 
-      {/* Mobile drawer */}
+      {/* Mobile/Tablet drawer */}
       <div
-        className={`md:hidden fixed inset-0 top-16 z-30 transition-opacity duration-200 ${open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}
+        className={`lg:hidden fixed inset-0 top-16 z-30 transition-opacity duration-200 ${open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}
         onClick={() => setOpen(false)}
       >
         <div className="absolute inset-0 bg-foreground/30 backdrop-blur-sm" />
